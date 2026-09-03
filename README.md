@@ -49,17 +49,29 @@ Python 3.6 或更高版本（推荐 3.8+）
 规则文件是一个 INI 格式的文本，描述每个音节的辅音、整音、过渡音和尾音。以下是一个简化示例（只展示核心音节）：
 
 [RULE]
+
 a=,a,,a
+
 ai=,a',"_a'i",i~
+
 ba=b,ba,,a
+
 bai=b,ba',"_a'i",i~
+
 ban=b,ba',"_a'n",n~
+
 bo=b,bo,,o
+
 bu=b,bu,,u
+
 ca=c,ca,,a
+
 cai=c,ca',"_a'i",i~
+
 can=c,ca',"_a'n",n~
+
 cuan=c,cu_,"_ua',_a'i",i~
+
 
 每一行代表一个音节，键名是音节标识（如 ba）。
 值包含四个字段，用逗号分隔：
